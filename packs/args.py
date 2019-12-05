@@ -9,8 +9,9 @@ def get_args(filename):
             dict_properties = {}
             with open(filename, 'r', encoding='utf8') as f:
                 for line in f:
-                    tmp_prop = [l.strip() for l in line.split(';')]
-                    dict_properties[tmp_prop.pop(0)] = ''.join(tmp_prop[1])
+                    if '#' not in line:
+                        tmp_prop = [l.strip() for l in line.split(';')]
+                        dict_properties[tmp_prop.pop(0)] = ''.join(tmp_prop[1])
             return dict_properties
         else:
             print(f'Arquivo {filename} não encontrado.')
