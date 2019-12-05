@@ -3,6 +3,7 @@ from pymongo import MongoClient
 from packs.check import get_check
 from packs.conversor import get_conversor
 from packs.insert import get_insert
+from packs.args import get_args
 
 
 class Connect(object):
@@ -18,7 +19,5 @@ class Connect(object):
 if __name__ == "__main__":
 
     client = Connect.get_connection()
-    dict_users = {"mongoadmin": 1713528, "shbd6001": 1579903,
-                  "mongodb_exporter": 1713479, "smom6001": ""}
-
+    dict_users = get_args('confiles/mongocheck.properties')
     get_check(client, dict_users, get_conversor, get_insert)
