@@ -1,8 +1,8 @@
 from pymongo import MongoClient
 
+from packs.check import get_check
 from packs.conversor import get_conversor
 from packs.insert import get_insert
-from packs.check import get_check
 
 
 class Connect(object):
