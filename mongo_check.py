@@ -19,5 +19,5 @@ class Connect(object):
 if __name__ == "__main__":
 
     client = Connect.get_connection()
-    dict_users = get_args('confiles/mongocheck.properties')
+    dict_users = get_args(get_conversor, 'confiles/mongocheck.properties')
     get_check(client, dict_users, get_conversor, get_insert)

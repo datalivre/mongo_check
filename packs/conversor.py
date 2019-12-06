@@ -3,9 +3,9 @@
 def get_conversor(lista):
     try:
         return int(lista)
-    except Exception:
+    except ValueError:
         return lista
 
 
 if __name__ == "__main__":
-    print(get_conversor([1, 2, 3, 'a', 5]))
+    print(get_conversor('123456'))

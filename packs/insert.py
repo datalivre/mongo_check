@@ -5,7 +5,7 @@ def get_insert(db, user, ga):
     cursor = collection.find_one_and_update(
         {"user": user},
         {"$set": {"customData.ga": ga}},
-        projection={'user': True, '_id': False},
+        projection={'user': True, 'customData':True, '_id': False},
         upsert=True)
     print(cursor)
 
