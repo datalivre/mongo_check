@@ -1,4 +1,7 @@
-
+# _*_ coding:utf-8 _*_
+# @author Robert Carlos                 #
+# email robert.carlos@linuxmail.org     #
+# 2019-Dec (CC BY 3.0 BR)               #
 
 def get_check(client, dict_users, func_get_conversor, func_get_insert):
 
