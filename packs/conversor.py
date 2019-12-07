@@ -3,6 +3,7 @@
 # email robert.carlos@linuxmail.org     #
 # 2019-Dec (CC BY 3.0 BR)               #
 
+
 def get_conversor(lista):
     try:
         return int(lista)

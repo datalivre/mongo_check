@@ -3,6 +3,7 @@
 # email robert.carlos@linuxmail.org     #
 # 2019-Dec (CC BY 3.0 BR)               #
 
+
 import errno
 from os import path
 from sys import exit

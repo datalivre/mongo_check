@@ -3,6 +3,7 @@
 # email robert.carlos@linuxmail.org     #
 # 2019-Dec (CC BY 3.0 BR)               #
 
+
 def get_check(client, dict_users, func_get_conversor, func_get_insert):
 
     db = client.admin
@@ -24,7 +25,7 @@ def get_check(client, dict_users, func_get_conversor, func_get_insert):
                 print(f'Nada a ser feito para o usuário {user}')
             else:
                 print(
-                    f'Custom Data {custom_data} não encontrado ou incorreto em {user}')
+                    f'Custom Data não encontrado ou incorreto em {user}')
                 func_get_insert(db, user, ga)
         else:
             print(f'O usuário {user} não consta neste db')
